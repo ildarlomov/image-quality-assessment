@@ -1,7 +1,7 @@
 {
   "train_env": "remote",
   "s3_bucket": "ds-hotel-image-assessment",
-  "docker_image": "idealo/nima-gpu",
+  "docker_image": "nima-cpu",
   "base_model_name": "MobileNet",
   "existing_weights": null,
   "n_classes": 10,
@@ -15,5 +15,6 @@
   "l2_reg": null,
   "dropout_rate": 0.75,
   "multiprocessing_data_load": true,
-  "num_workers_data_load": 8
+  "num_workers_data_load": 8,
+  "img_format": "jpg"
 }

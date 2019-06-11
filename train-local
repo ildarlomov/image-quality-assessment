@@ -43,6 +43,7 @@ cp $CONFIG_FILE $TRAIN_JOB_DIR/config.json
 cp $SAMPLES_FILE $TRAIN_JOB_DIR/samples.json
 
 # start training
+#-v finetune_data/imgs:/src/images
 DOCKER_RUN="docker run -d
   -v $IMAGE_DIR:/src/images
   -v "$(pwd)/$TRAIN_JOB_DIR":/src/$TRAIN_JOB_DIR

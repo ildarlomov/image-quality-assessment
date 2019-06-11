@@ -1,7 +1,7 @@
 {
   "train_env": "TID2013",
   "s3_bucket": "ds-hotel-image-assessment",
-  "docker_image": "idealo/nima-gpu",
+  "docker_image": "nima-cpu",
   "base_model_name": "MobileNet",
   "existing_weights": null,
   "n_classes": 10,
