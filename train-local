@@ -42,6 +42,7 @@ mkdir -p $TRAIN_JOB_DIR
 cp $CONFIG_FILE $TRAIN_JOB_DIR/config.json
 cp $SAMPLES_FILE $TRAIN_JOB_DIR/samples.json
 
+docker_image="nima-cpu"
 # start training
 #-v finetune_data/imgs:/src/images
 DOCKER_RUN="docker run -d
